@@ -61,6 +61,7 @@ sudo vim /etc/hostname
 **Step 4:** Next we want to find the the download URL for Nextcloud
 
 ![alt text](images/nextcloud.png)
+
 **Note:** You could also use <https://download.nextcloud.com/server/releases/latest.zip>
 This link will always get the latest zip file for the nextcloud server.
 
@@ -329,6 +330,7 @@ By reading these questions and exploring relevant resources, you'll be able to h
 - Change /scripts in the Script_Filename to `$document_root$fastcgi_script_name;`
 
 Here is a reference image to match the configurations.
+
 ![alt text](images/php.png)
 
 6. Test the configuration to make sure there are no syntax errors:
@@ -346,6 +348,7 @@ If no errors are reported, restart Nginx to apply the changes:
 ```
 
 Find the memory_limit line and change it from `memory_limit = 128M` to `memory_limit = 512M`
+
 ![alt text](images/memory.png)
 
 Next, We want to uncomment the extensions in order to enable them. To uncomment, remove the preceeding semicolon (;) from the line.
@@ -359,8 +362,8 @@ extension=zip
 ```
 
 ![alt text](images/extensions.png)
-If any of these are already uncommented, it's
-fine.
+
+If any of these are already uncommented, it's fine.
 
 Finally run the following commands for the effects to take place:
 
@@ -639,6 +642,8 @@ Here are some future extensions and enhancements that we plan on doing:
 10. **Scalability and High Availability**: Plan for scalability and high availability of the Nextcloud deployment to accommodate future growth and ensure reliable access to resources.
 
 These proposed extensions can enhance the functionality, usability, and security of our Nextcloud deployment for educational purposes, providing valuable learning experiences and practical applications for our users.
+
+## Video Link: <https://youtu.be/cZ5A-U6P2nw>
 
 ## Conclusion
 
